@@ -1,7 +1,14 @@
 // pick rock, paper, or scissors
 
 function play(pChoice) {
-  let computer = "rock";
+  let computer = Math.random();
+  if (computer < .34) {
+    computer = "rock";
+  } else if (computer <= .67) {
+    computer = "paper";
+  } else {
+    computer = "scissors";
+  }
   winner(pChoice, computer)
 }
 
