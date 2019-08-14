@@ -5,33 +5,35 @@ function play(pChoice) {
   winner(pChoice, computer)
 }
 
-// let gameElement = document.querySelector("#game-status")
-// gameElement.textContent = 
+
+
+let gameElement = document.querySelector("#game-status")
+
 
 // figure out who won
 function winner(playerChoice, computerChoice) {
   if (playerChoice == computerChoice) {
-    return "It's a tie! Play again!"
+    return gameElement.textContent = "It's a tie! Play Again!"
   }
   if (playerChoice == "rock") {
     if (computerChoice == "paper") {
-      return "You Lose! Play again!"
+      return gameElement.textContent = "You Lose! Play again!"
     } else {
-      return "You Win! Play Again!"
+      return gameElement.textContent = "You Win! Play Again!"
     }
   }
   if (playerChoice == "paper") {
     if (computerChoice == "scissors") {
-      return "You Lose! Play again!"
+      return gameElement.textContent = "You Lose! Play again!"
     } else {
-      return "You Win! Play Again!"
+      return gameElement.textContent = "You Win! Play Again!"
     }
   }
   if (playerChoice == "scissors") {
     if (computerChoice == "rock") {
-      return "You Lose! Play again!"
+      return gameElement.textContent = "You Lose! Play again!"
     } else {
-      return "You Win! Play Again!"
+      return gameElement.textContent = "You Win! Play Again!"
     }
   }
 }
