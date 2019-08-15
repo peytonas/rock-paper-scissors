@@ -8,5 +8,9 @@
 }
 
 .row-one {
-  height: 100vh;
+  height: 55vh;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
