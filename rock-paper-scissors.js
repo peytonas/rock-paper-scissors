@@ -3,10 +3,13 @@
 function play(pChoice) {
   let computer = Math.random();
   if (computer < .34) {
+    // @ts-ignore
     computer = "rock";
   } else if (computer <= .67) {
+    // @ts-ignore
     computer = "paper";
   } else {
+    // @ts-ignore
     computer = "scissors";
   }
   winner(pChoice, computer)
